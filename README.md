@@ -1,1 +1,1 @@
-# Clone-CV
+# Simple portfolio design
