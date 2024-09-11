@@ -18,6 +18,8 @@ ul {
   list-style: none;
 }
 
+/* Navbar */
+
 .navbar,
 .container {
   max-width: 1140px;
@@ -62,6 +64,8 @@ li.dropdownLink {
   display: none;
 }
 
+/* Header */
+
 header {
   display: flex;
   justify-content: center;
@@ -95,6 +99,8 @@ header {
    display: block; 
 } 
 */
+
+/* About Me */
 
 .services,
 .contact-container {
@@ -177,6 +183,12 @@ header {
   text-transform: capitalize;
 }
 
+/* Portfolio Section */
+
+/* .portfolio {
+  background-color: #f1f3fa;
+} */
+
 .section-header {
   text-align: center;
   padding: 6rem 0 4rem;
@@ -198,11 +210,40 @@ header {
   height: 250px;
   background-color: #f1f3fa;
   transition: 0.2s ease-in-out;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: -7px -7px 8px 0px rgba(0, 0, 0, 0.51);
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio-box:hover {
   cursor: pointer;
   transform: scale(1.02);
+}
+
+/* Contact Me */
+.contact-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: center;
+}
+
+.contact-me-img {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.contact-me-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 form label {
@@ -214,7 +255,7 @@ form label {
 }
 
 .form-control {
-  max-width: 800px;
+  max-width: 400px;
   width: 100%;
   background-color: #fff;
   color: #292b2c;
