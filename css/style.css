@@ -4,8 +4,9 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  line-height: 20px;
-  font-size: 1rem;
+  font-size: 62.5%;
+  /* line-height: 20px; */
+  line-height: 1.6;
   color: #303137;
   margin: 0;
 }
@@ -30,11 +31,11 @@ ul {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .brand {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .sensei {
@@ -56,8 +57,8 @@ a {
 
 .topnav .nav-link,
 a {
-  padding-left: 20px;
-  font-size: 20px;
+  padding-left: 2rem;
+  font-size: 2rem;
 }
 
 li.dropdownLink {
@@ -80,6 +81,10 @@ header {
   padding: 6rem 0;
 }
 
+.headershot-wrapper h1 {
+  font-size: 3rem;
+}
+
 .headshot {
   border-radius: 50%;
   max-width: 200px;
@@ -95,15 +100,17 @@ header {
   text-align: center;
 }
 
-/* .headshot-info h1 {
-   display: block; 
-} 
-*/
+.headshot-info h1 {
+  font-size: 3rem;
+}
+
+.headshot-info p {
+  font-size: 1.8rem;
+}
 
 /* About Me */
 
-.services,
-.contact-container {
+.services {
   background-color: #f1f3fa;
   padding: 4rem 1rem;
 }
@@ -113,6 +120,15 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.intro h2 {
+  font-size: 3rem;
+}
+
+.intro p {
+  font-size: 1.8rem;
+  color: #646b90;
 }
 
 .media-object {
@@ -153,13 +169,13 @@ header {
 }
 
 .blurb-header {
-  font-size: 24px;
+  font-size: 2.4rem;
   margin-top: 0;
 }
 
 .blurb-info {
   color: #646b90;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .quote-btn-wrapper {
@@ -171,7 +187,7 @@ header {
 .quote-btn {
   color: #fff;
   background-color: #66b6d3;
-  font-size: 18px;
+  font-size: 1.8rem;
   border: none;
   padding: 0.8rem 4rem;
   border-radius: 10px;
@@ -194,6 +210,10 @@ header {
   padding: 6rem 0 4rem;
 }
 
+.section-header h1 {
+  font-size: 3rem;
+}
+
 .portfolio-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -203,6 +223,15 @@ header {
 .portfolio-object {
   max-width: 250px;
   margin: 1rem 0;
+}
+
+.portfolio-object h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.portfolio-text {
+  font-size: 1.5rem;
 }
 
 .portfolio-box {
@@ -227,14 +256,34 @@ header {
 }
 
 /* Contact Me */
+.contact-container {
+  background-color: #f1f3fa;
+  padding: 1rem 1rem;
+}
+
 .contact-me {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 800px;
+  border-radius: 10px;
+  border: #93999c solid 0.2rem;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.contact-me-form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-me-img {
+  /* margin-left: 200px; */
+  flex-basis: 50%;
   width: 400px;
   height: 400px;
   overflow: hidden;
@@ -252,14 +301,17 @@ form label {
 
 .form-group {
   margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-control {
-  max-width: 400px;
+  max-width: 30rem;
   width: 100%;
   background-color: #fff;
   color: #292b2c;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px solid #ced4da;
   padding: 0.375rem 0.75rem;
   font-size: 16px;
@@ -293,16 +345,20 @@ form label {
 
 .bottom {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 20px auto;
   padding-bottom: 20px;
 }
 
 .bottom p {
+  font-size: 1.3rem;
   margin-bottom: 5px;
 }
 
 .bottom span {
+  font-size: 1.2rem;
   margin-left: 10px;
 }
 
